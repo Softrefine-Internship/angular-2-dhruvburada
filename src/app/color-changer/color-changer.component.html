@@ -1,0 +1,24 @@
+<div #myName class="heading">Dhruv Burada</div>
+
+<form>
+  <div class="form-group">
+    <label for="text-color">Text Color</label>
+    <input
+      type="color"
+      name="text-color"
+      id="text-color"
+      [(ngModel)]="textColor"
+      (input)="updateColors()"
+    />
+  </div>
+  <div class="form-group">
+    <label for="back-color">Background Color</label>
+    <input
+      type="color"
+      name="back-color"
+      id="back-color"
+      [(ngModel)]="backColor"
+      (input)="updateColors()"
+    />
+  </div>
+</form>
